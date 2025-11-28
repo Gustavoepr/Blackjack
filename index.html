@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+<header class="titulo">
+    <h1>Blackjack</h1>
+</header>
+<div class="row mt-2"></div>
+<div class="col text-center">
+    <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+    <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+    <button id="btnPlantarse" class="btn btn-primary">Plantarse</button>
+</div>
+
+
+<div class="jugador row mt-2">
+    <div class="col">
+        <h2>Mano del Jugador - <small>0</small></h2>
+        <div id="cartas-jugador">
+            <!-- <img class="carta" src="assets/cartas/2C.png" alt=""> -->
+              
+        </div>
+    </div>
+</div>
+<div class="dealer row mt-2">
+    <div class="col">
+        <h2>Mano del Dealer - <small>0</small></h2>
+        <div id="cartas-dealer">
+            <!-- <img class="carta" src="assets/cartas/2C.png" alt="">-->
+        </div>
+    </div>
+</div>
+
+    <script src="js/blackjack.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+    
+</body>
+</html>
