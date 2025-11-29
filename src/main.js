@@ -1,4 +1,7 @@
-const main = () => {
+import './style.css'
+import Swal from 'sweetalert2'
+
+export const main = () => {
 	// Estado del juego
 	const juego = {
 		baraja: [],
@@ -75,7 +78,7 @@ const main = () => {
 
 	const actualizarUIJugador = (carta) => {
 		const imgCarta = document.createElement('img');
-		imgCarta.src = `assets/cartas/${carta}.png`;
+		imgCarta.src = `/src/assets/cartas/${carta}.png`;
 		imgCarta.classList.add('carta');
 		ui.divCartaJugador.append(imgCarta);
 		ui.puntos[0].textContent = juego.puntuacionJugador;
@@ -83,7 +86,7 @@ const main = () => {
 
 	const actualizarUIDealer = (carta) => {
 		const imgCarta = document.createElement('img');
-		imgCarta.src = `assets/cartas/${carta}.png`;
+		imgCarta.src = `/src/assets/cartas/${carta}.png`;
 		imgCarta.classList.add('carta');
 		ui.divCartaDealer.append(imgCarta);
 		ui.puntos[1].textContent = juego.puntuacionDealer;
@@ -183,3 +186,4 @@ const main = () => {
 };
 
 main();
+
