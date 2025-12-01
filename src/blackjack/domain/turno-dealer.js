@@ -1,8 +1,7 @@
-import { pedirCarta } from './pedir-carta.js';
-import { valorCarta } from './valor-carta.js';
+import { pedirCarta } from '../domain/pedir-carta.js';
+import { valorCarta } from '../usecases/valor-carta.js';
 
-export const turnoDealer = (puntuacionJugador, baraja, actualizarUIDealer) => {
-    let puntuacionDealer = 0;
+export const turnoDealer = (puntuacionJugador, baraja, puntuacionDealer, actualizarUIDealer) => {
     const puntosMinimos = puntuacionJugador;
     do {
         const carta = pedirCarta(baraja);
